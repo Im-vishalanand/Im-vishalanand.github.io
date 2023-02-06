@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 15px 18%;
+    transition: all .50s ease;
+    /* border-bottom: 1px solid black; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+header img{
+    height: 30px;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(109, 131, 243);
+}
+
+#navbar{
+    display: flex;
+}
+
+#navbar a{
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0 20px;
+    transition: all .50s ease;
+    color: rgb(109, 131, 243);
+    
+}
+
+#navbar a:hover{
+    color: rgb(96, 96, 96);
+    
+}
+
+#navbar a.active{
+    color: rgb(63, 63, 63);
+
+}
+
+#menu-icon{
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+@media (max-width: 1280px) {
+
+    header{
+        padding: 6px 2%;
+        transition: .2s;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #navbar {
+        padding: 5px 0;
+        margin: 0 40px;
+
+    }
+
+}
+
+@media (max-width: 1024px){
+
+    #menu-icon{
+        display: block;
+
+    }
+
+    #navbar{
+        position: absolute;
+        top: 100%;
+        /* right: 25%; */
+        right: -100%;
+        width: 30%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* transition: all .50s ease; */
+    }
+
+    .logo{
+        font-size: 1.3rem;
+        
+    }
+
+    #navbar a{
+        display: block;
+        margin: 8px 0;
+        padding: 0 25px;
+        transition: all .50s ease;
+    }
+
+    #navbar a:hover{
+        color: rgb(63, 63, 63);
+        transform: translateY(2px);
+    }
+
+    #navbar a.active{
+        color: rgb(109, 131, 243);    
+    }
+
+    #navbar.open{
+        right: 25%;
+    }
+
+}
