@@ -16,8 +16,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
-    padding: 15px 18%;
+    /* background: transparent; */
+    background-color: white;
+    padding: 16px 12%;
     transition: all .50s ease;
     /* border-bottom: 1px solid black; */
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -28,17 +29,18 @@ header img{
 }
 
 .logo{
-    font-size: 1.5rem;
-    font-weight: 600;
+    display: flex;
+    align-items: center;
     color: rgb(109, 131, 243);
 }
 
 #navbar{
     display: flex;
+    align-items: center;
 }
 
 #navbar a{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     padding: 5px 0;
     margin: 0 20px;
@@ -58,25 +60,109 @@ header img{
 }
 
 #menu-icon{
-    font-size: 35px;
     cursor: pointer;
     z-index: 1001;
     display: none;
 }
 
+.margin-t-b{
+    margin-bottom: 100px;
+    margin-top: 65px;
+}
+.main-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: calc(100vh - 100px);
+    margin-bottom: 100px;
+}
+
+.home-social img{
+    width: 30px;
+}
+
+.home-text>p{
+    font-size: 1.2rem;
+    color: rgb(56, 56, 56);
+    margin: 7px 0;
+    
+}
+#home>img{
+    width: 35vw;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.home-text h1{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(56, 56, 56);
+    
+}
+.resume{
+    margin: 20px 0;
+
+}
+#resume{
+    background: linear-gradient(134deg, rgb(106, 152, 240) 0%, rgb(73, 97, 220) 99%);
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+
+}
+
+.home-card{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: rgb(109, 131, 243);
+    line-height: 1.8rem;
+    background-color: white;
+    z-index: 100;
+    padding: 40px 25px;
+    border-radius: 10px;
+
+}
+
+.home-social a{
+    margin: 0 10px;
+    size: 50px;
+}
+
+section{
+    height: 100vh;
+}
+
+#about{
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1280px) {
 
     header{
-        padding: 6px 2%;
+        padding: 16px 2%;
         transition: .2s;
         display: flex;
         justify-content: space-around;
-    }
-
-    #navbar {
-        padding: 5px 0;
-        margin: 0 40px;
-
     }
 
 }
@@ -91,26 +177,26 @@ header img{
     #navbar{
         position: absolute;
         top: 100%;
-        /* right: 25%; */
         right: -100%;
-        width: 30%;
+        width: 50%;
         height: auto;
+        /* background: rgb(109, 131, 243); */
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        /* transition: all .50s ease; */
+        transition: all .50s ease;
     }
-
-    .logo{
-        font-size: 1.3rem;
-        
-    }
-
+    
     #navbar a{
         display: block;
         margin: 8px 0;
         padding: 0 25px;
-        transition: all .50s ease;
+        /* color: white; */
+        transition: all 1 ease;
+    }
+    #navbar a.active{
+    color: rgb(63, 63, 63);
+
     }
 
     #navbar a:hover{
