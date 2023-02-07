@@ -81,6 +81,9 @@ header img{
     width: 30px;
 }
 
+.home-text{
+    margin: 40px 40px 10px 40px;
+}
 .home-text>p{
     font-size: 1.2rem;
     color: rgb(56, 56, 56);
@@ -91,6 +94,7 @@ header img{
     position: absolute;
     right: 0;
     bottom: 0;
+    z-index: -100000;
 }
 
 .home-text h1{
@@ -153,7 +157,26 @@ section{
 
 
 
+@media (max-width: 425px) {
+    .home-social{
+        background-color: white;
+        padding-top: 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-around;
+        
+    }
 
+    .main-body{
+        padding-top: 100px;
+    }
+
+    #home>img{
+        width: 1000px;
+        right: 0;
+    }
+
+}
 @media (max-width: 1280px) {
 
     header{
@@ -208,6 +231,10 @@ section{
 
     #navbar.open{
         right: 25%;
+    }
+
+    .main-body{
+        flex-direction: column;
     }
 
 }
