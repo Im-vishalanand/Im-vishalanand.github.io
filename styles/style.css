@@ -73,7 +73,7 @@ header img{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 165px);
     margin-bottom: 100px;
 }
 
@@ -88,8 +88,6 @@ header img{
     
 }
 #home>img{
-    width: 35vw;
-    height: 100vh;
     position: absolute;
     right: 0;
     bottom: 0;
