@@ -326,7 +326,7 @@ footer>div:nth-child(2){
 
 }
 
-@media (max-width: 1024px){
+@media (max-width: 724px){
 
     #menu-icon{
         display: block;
