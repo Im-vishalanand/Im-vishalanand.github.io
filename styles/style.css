@@ -35,12 +35,12 @@ header img{
     color: rgb(109, 131, 243);
 }
 
-#navbar{
+#nav-menu{
     display: flex;
     align-items: center;
 }
 
-#navbar a{
+#nav-menu a{
     font-size: 1.2rem;
     font-weight: 500;
     padding: 5px 0;
@@ -49,11 +49,11 @@ header img{
     color: rgb(109, 131, 243);
 }
 
-#navbar a:hover{
+#nav-menu a:hover{
     color: rgb(96, 96, 96);    
 }
 
-#navbar a.active{
+#nav-menu a.active{
     color: rgb(63, 63, 63);
 
 }
@@ -131,7 +131,7 @@ header img{
     margin: 20px 0;
 
 }
-#resume{
+#resume-button-2{
     background: linear-gradient(134deg, rgb(106, 152, 240) 0%, rgb(73, 97, 220) 99%);
     color: white;
     padding: 10px;
@@ -333,7 +333,7 @@ footer>div:nth-child(2){
 
     }
 
-    #navbar{
+    #nav-menu{
         position: absolute;
         top: 0;
         margin-top: 60px;
@@ -344,28 +344,28 @@ footer>div:nth-child(2){
         transition: all .50s ease;
     }
     
-    #navbar a{
+    #nav-menu a{
         display: block;
         margin: 8px 0;
         padding: 0 25px;
         /* color: white; */
         transition: all 1 ease;
     }
-    #navbar a.active{
+    #nav-menu a.active{
         color: rgb(63, 63, 63);
         
     }
 
-    #navbar a:hover{
+    #nav-menu a:hover{
     color: rgb(63, 63, 63);
     transform: translateY(2px);
 }
 
-#navbar a.active{
+#nav-menu a.active{
     color: rgb(109, 131, 243);    
 }
 
-#navbar.open{
+#nav-menu.open{
     width: 100%;
     top: 70;
     display: block;

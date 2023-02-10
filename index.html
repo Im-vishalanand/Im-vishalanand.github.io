@@ -15,13 +15,13 @@
     <!-- <a href="#" id="logo" class="logo">Kumar Vishal Anand</a> -->
     <a href="#" class="logo"><img src="photos/logo.png" alt="Vishal-logo"></a>
 
-    <ul id="navbar">
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a download= "" href="documents/KUMAR_ ANAND_Resume.pdf" onclick="window.open(`https://drive.google.com/file/d/1nsnlYP3nJ9X8FGQaom0rBlRMCfC4tB03/view`)" target="_blank">Resume</a></li>
+    <ul id="nav-menu">
+      <li><a href="#" class="active nav-link home">Home</a></li>
+      <li><a href="#about" class="nav-link about">About</a></li>
+      <li><a href="#skills" class="nav-link skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link projects">Projects</a></li>
+      <li><a href="#contact" class="nav-link contact">Contact</a></li>
+      <li><a download= "" href="documents/KUMAR_ ANAND_Resume.pdf" onclick="window.open(`https://drive.google.com/file/d/1nsnlYP3nJ9X8FGQaom0rBlRMCfC4tB03/view`)" target="_blank" class="nav-link resume" id="resume-button-1">Resume</a></li>
     </ul>
 
     <a href="#" class="logo bx bx-menu" id="menu-icon"><span class="material-symbols-outlined">menu</span></a>
@@ -29,24 +29,23 @@
   
   <section id="home" class="margin-t-b main-body">
     <div></div>
-    <!-- <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzI1IiBoZWlnaHQ9Ijk5MCIgdmlld0JveD0iMCAwIDcyNSA5OTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHg9IjY2My45NzMiIHk9Ii00NTQiIHdpZHRoPSIxMjcwLjAzIiBoZWlnaHQ9IjkzOSIgcng9IjE1IiB0cmFuc2Zvcm09InJvdGF0ZSg0NSA2NjMuOTczIC00NTQpIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXIpIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXIiIHgxPSI2NjMuOTczIiB5MT0iLTQ1NCIgeDI9IjE1NTkuNjMiIHkyPSI3NTcuNDEyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM2QTk4RjAiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNDk2MURDIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+Cg==" alt=""> -->
-    <div class="home-text">
+    <div id="user-detail-name" class="home-text">
       <p>Hello, I’m</p>
       <h1>KUMAR VISHAL ANAND</h1>
       <p>JAVA BACK-END DEVELOPER</p>
-      <div class="home-links">
+      <div class="home-links" id="user-detail-intro">
         <div class="resume">
-          <a download= "" href="documents/KUMAR_ ANAND_Resume.pdf" onclick="window.open(`https://drive.google.com/file/d/1nsnlYP3nJ9X8FGQaom0rBlRMCfC4tB03/view`)" target="_blank" id="resume">Download Resume</a>
+          <a download= "" href="documents/KUMAR_ ANAND_Resume.pdf" onclick="window.open(`https://drive.google.com/file/d/1nsnlYP3nJ9X8FGQaom0rBlRMCfC4tB03/view`)" target="_blank" id="resume-button-2">Download Resume</a>
 
         </div>
         <div class="home-social">
-          <a href="https://github.com/Im-vishalanand" target="_blank">
+          <a href="https://github.com/Im-vishalanand" id="contact-github" target="_blank">
             <img src="photos/github.png" alt="">
           </a>
           <a href="https://twitter.com/Im_vishalanand" target="_blank">
             <img src="photos/twitter.png" alt="">
           </a>
-          <a href="https://www.linkedin.com/in/im-vishalanand/" target="_blank">
+          <a href="https://www.linkedin.com/in/im-vishalanand/" id="contact-linkedin" target="_blank">
             <img src="photos/linkedin.png" alt="">
           </a>
         </div>
@@ -88,49 +87,49 @@
     <div class="skills-card">
       <div class="container grid" id="tech">
       <div>
-        <img src="photos/java-logo.png" alt="Java"><p>Java</p>
+        <img class="skills-card-img" src="photos/java-logo.png" alt="Java"><p class="skills-card-name">Java</p>
       </div>
       <div>
-        <img src="photos/spring-boot-logo.png" alt="Spring_Boot"><p>Spring_Boot</p>
+        <img class="skills-card-img" src="photos/spring-boot-logo.png" alt="Spring_Boot"><p class="skills-card-name">Spring Boot</p>
       </div>
       <div>
-        <img src="photos/jdbc-logo.png" alt="JDBC"><p>JDBC</p>
+        <img class="skills-card-img" src="photos/jdbc-logo.png" alt="JDBC"><p class="skills-card-name">JDBC</p>
       </div>
       <div>
-        <img src="photos/mysql-logo.png" alt="MySQL"><p>MySQL</p>
+        <img class="skills-card-img" src="photos/mysql-logo.png" alt="MySQL"><p class="skills-card-name">MySQL</p>
       </div>
       <div>
-        <img src="photos/hibernate-logo.png" alt="Hibernate"><p>Hibernate</p>
+        <img class="skills-card-img" src="photos/hibernate-logo.png" alt="Hibernate"><p class="skills-card-name">Hibernate</p>
       </div>
       <div>
-        <img src="photos/javascript-logo.webp" alt="JavaScript"><p>JavaScript</p>
+        <img class="skills-card-img" src="photos/javascript-logo.webp" alt="JavaScript"><p class="skills-card-name">JavaScript</p>
       </div>
       <div>
-        <img src="photos/css-logo.png" alt="CSS"><p>CSS</p>
+        <img class="skills-card-img" src="photos/css-logo.png" alt="CSS"><p class="skills-card-name">CSS</p>
       </div>
       <div>
-        <img src="photos/html_logo.png" alt="HTML"><p>HTML</p>
+        <img class="skills-card-img" src="photos/html_logo.png" alt="HTML"><p class="skills-card-name">HTML</p>
       </div>
       <div>
-        <img src="photos/bootstrap-logo.png" alt="BootStrap"><p>BootStrap</p>
+        <img class="skills-card-img" src="photos/bootstrap-logo.png" alt="BootStrap"><p class="skills-card-name">BootStrap</p>
       </div>
       <div>
-        <img src="photos/github-logo.png" alt="GitHub"><p>GitHub</p>
+        <img class="skills-card-img" src="photos/github-logo.png" alt="GitHub"><p class="skills-card-name">GitHub</p>
       </div>
       <div>
-        <img src="photos/vscode-logo.png" alt="VS_Code"><p>VS_Code</p>
+        <img class="skills-card-img" src="photos/vscode-logo.png" alt="VS_Code"><p class="skills-card-name">VS_Code</p>
       </div>
         <!-- <div>
           <img src="" alt="Eclipse"><p>Eclipse</p>
         </div> -->
       <div>
-        <img src="photos/postman-logo.png" alt="Postman"><p>Postman</p>
+        <img class="skills-card-img" src="photos/postman-logo.png" alt="Postman"><p class="skills-card-name">Postman</p>
       </div>
       <!-- <div>
-        <img src="" alt="Apache_Server"><p>Apache_Server</p>
+        <img src="" alt="Apache_Server"><p class="skills-card-name">Apache_Server</p>
       </div>-->
       <div> 
-        <img src="photos/git-logo.png" alt="Git"><p>Git</p>
+        <img class="skills-card-img" src="photos/git-logo.png" alt="Git"><p class="skills-card-name">Git</p>
       </div>
     </div>
   </section>
