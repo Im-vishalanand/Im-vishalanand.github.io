@@ -375,6 +375,9 @@ section{
 
 
 
+#github-sec{
+    height: auto;
+}
 
 .github>h1{
     text-align: center;
@@ -400,9 +403,6 @@ section{
 }
 .github>div>div>img{
     margin: 10px;
-}
-#github-top-langs{
-    margin-bottom: 750px;
 }
 
 
