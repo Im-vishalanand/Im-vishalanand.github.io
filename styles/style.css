@@ -102,7 +102,6 @@ header img{
     height: 100vh;
     display: flex;
     justify-content: space-around;
-
 }
 .home-text{
     /* margin: 40px 40px 10px 40px; */
@@ -162,7 +161,6 @@ header img{
 .home-text h1{
     font-size: 3.5rem;
     font-weight: 700;
-    /* color: rgb(56, 56, 56); */
     color: rgb(78, 105, 223);
 }
 .resume{
@@ -332,13 +330,11 @@ section{
     background-color: #10151a;
     padding: 40px;
     border-radius: 10px;
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     margin: 40px 0;
 }
 .project-card>div:nth-child(1){
-    border: 1px solid red;
     width: 62%;
     
 }
@@ -346,7 +342,6 @@ section{
     width: 100%;
 }
 .project-card>div:nth-child(2){
-    border: 1px solid red;
     text-align: center;
     margin: 0px 20px;
     width: 38%;
