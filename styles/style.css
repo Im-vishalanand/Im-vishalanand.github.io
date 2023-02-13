@@ -50,11 +50,11 @@ header img{
 }
 
 #nav-menu a:hover{
-    color: rgb(96, 96, 96);    
+    color: #10151a;  
 }
 
 #nav-menu a.active{
-    color: rgb(63, 63, 63);
+    color: #10151a;
 
 }
 
@@ -88,7 +88,8 @@ header img{
     height: 100vh;
     z-index: -10;
     background-color: rgb(78, 105, 223);
-    clip-path: polygon(55% 0%,101% 0%,101% 101%,81% 101%,71% 101%,29% 0%);
+    clip-path: polygon(74% 0%,101% 0%,100% 20%,101% 101%,89% 101%,58% 101%,76% 49%,58% 0%);
+
 }
 
 .home-social img{
@@ -104,15 +105,52 @@ header img{
 
 }
 .home-text{
-    margin: 40px 40px 10px 40px;
+    /* margin: 40px 40px 10px 40px; */
     width: 100%;
-    margin-left: 150px;
+    margin-left: 250px;
 }
 .home-text>p{
-    font-size: 1.2rem;
+    font-size: 2.5rem;
     color: rgb(56, 56, 56);
     margin: 7px 0;
+}
+.home-text>p:nth-child(3){
+    font-weight: 700;
+}
+
+.java{
+    font-size: 30px;
+    position: relative;  
+    z-index: -1000;
+}
+
+.java::before{
+    top:0;
+    left:0;
+    position: absolute;
+    content: "";
+    background-color: #F9F8F7;
+    border-left: 3px solid #303030;
+    width:100%;
+    height:100%;
+    animation: animate 4s steps(16) infinite;
+    transition: all .35s;
+    z-index: 0;
+}
+@keyframes animate{
+
+    40% ,60%{
+        left:53%;
+        background-color: white;
+    }
+    70%,100%{
+        background-color: white;
+    }
     
+    100%{
+        left:0%;
+        background-color: white;
+    }
 }
 #home>img{
     position: absolute;
@@ -122,10 +160,10 @@ header img{
 }
 
 .home-text h1{
-    font-size: 2rem;
+    font-size: 3.5rem;
     font-weight: 700;
-    color: rgb(56, 56, 56);
-    
+    /* color: rgb(56, 56, 56); */
+    color: rgb(78, 105, 223);
 }
 .resume{
     margin: 20px 0;
@@ -136,6 +174,7 @@ header img{
     color: white;
     padding: 10px;
     border-radius: 4px;
+    font-size: 20px;
 
 }
 
@@ -158,17 +197,21 @@ header img{
     /* font-size: 0.5rem; */
 }
 
+
 .home-social a{
-    margin: 0 10px;
+    margin: 0 15px;
     size: 50px;
 }
 
 section{
     height: 100vh;
 }
+#skills-sec, #projects-sec, #contact-sec{
+    height: 12vh;
+}
 
 #about{
-    background-color: rgb(71, 71, 71);
+    background-color: #10151a;
     width: 100%;
     clip-path: polygon(0 0,100% 0% ,100% 90%, 80% 80%, 0% 90% );
     height: 100vh;
@@ -181,17 +224,19 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
-    /* border: 1px solid red; */
-    
+    width: 60%;    
 }
 #about img{
     border-radius: 50%;
     width: 20vw;
 }
+.home-card-main>div>img{
+    border-radius: 50%;
+    width: 25vw;
+    margin-left: 150px;
+}
 
 #about>div:nth-child(2){
-    /* border: 1px solid red; */
     width: 100%;
     align-items: center;
     display: flex;
@@ -212,16 +257,16 @@ section{
 }
 #about>div:nth-child(2)>a{
     padding: 10px 15px;
-    color: white;
+    color: rgb(66, 66, 66);
     border-radius: 5px;
-    background: linear-gradient(134deg, rgb(156, 156, 156) 0%, rgb(29, 29, 29) 99%);
+    background: linear-gradient(134deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 99%);
     font-size: 1.2rem;
     border: none;
     cursor: pointer;
 }
 #about>div:nth-child(2)>a:hover{
-    background: white;
-    color: rgb(66, 66, 66);
+    color: #ffffff;
+    background: #4e69df;
 }
 
 
@@ -257,6 +302,19 @@ section{
     height: 100%;
 }
 
+
+
+
+
+
+
+
+
+
+#projects{
+    height: auto;
+    margin-bottom: 100px;
+}
 #projects>h1{
     text-align: center;
     font-size: 2.5rem;
@@ -264,10 +322,103 @@ section{
     margin-bottom: 50px;
 }
 
+.all-projects{
+    width: 80%;
+    margin: auto;
+}
+
+.project-card{
+    height: 60vh;
+    background-color: #10151a;
+    padding: 40px;
+    border-radius: 10px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+.project-card>div:nth-child(1){
+    border: 1px solid red;
+    width: 62%;
+    
+}
+.project-card>div:nth-child(1)>img{
+    width: 100%;
+}
+.project-card>div:nth-child(2){
+    border: 1px solid red;
+    text-align: center;
+    margin: 0px 20px;
+    width: 38%;
+    padding: 0 20px;
+}
+.project-card>div:nth-child(2)>h1,.project-card>div:nth-child(2)>p,.project-card>div:nth-child(2)>h5,.project-card>div:nth-child(2)>button{
+    margin: 15px 0;
+    font-size: 1.1rem;
+    color: white;
+}
+.project-card>div:nth-child(2)>div{
+    margin: 30px 0;
+}
+.project-card>div:nth-child(2) button{
+    padding: 8px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: #10151a;
+    font-size: 1.1rem;
+}
+
+.project-card>div:nth-child(2)>h1{
+    font-size: 28px;
+}
 
 
 
 
+
+
+
+
+.github>h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(36, 36, 36);
+    margin-bottom: 30px;
+}
+.github>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calendar{
+    width:80%;
+    background-color: #10151a;
+    padding: 40px;
+    border-radius:10px ;
+    color:#ECE9E6
+}
+.github>div>div{
+    margin: 10px auto;
+}
+.github>div>div>img{
+    margin: 10px;
+}
+#github-top-langs{
+    margin-bottom: 750px;
+}
+
+
+
+
+#contact>h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(36, 36, 36);
+    margin-bottom: 30px;
+}
 
 
 
@@ -293,7 +444,9 @@ footer>div:nth-child(2){
     align-items: center;
     font-weight: 700;
     padding-top: 10px;
+    color: rgb(34, 34, 34);
 }
+
 
 @media (max-width: 425px) {
     .home-social{
@@ -313,6 +466,17 @@ footer>div:nth-child(2){
         width: 1000px;
         right: 0;
     }
+
+    /* #about{
+        flex-direction: column;
+    } */
+
+
+
+    #tech {
+        grid-template-columns: repeat(3,1fr);
+    }
+
 
 }
 @media (max-width: 1280px) {

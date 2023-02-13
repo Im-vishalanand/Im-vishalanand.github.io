@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="photos/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
     <title>Kumar Vishal Anand | Web Developer</title>
     
 </head>
@@ -18,9 +19,9 @@
     <ul id="nav-menu">
       <li><a href="#" class="active nav-link home">Home</a></li>
       <li><a href="#about" class="nav-link about">About</a></li>
-      <li><a href="#skills" class="nav-link skills">Skills</a></li>
-      <li><a href="#projects" class="nav-link projects">Projects</a></li>
-      <li><a href="#contact" class="nav-link contact">Contact</a></li>
+      <li><a href="#skills-sec" class="nav-link skills">Skills</a></li>
+      <li><a href="#projects-sec" class="nav-link projects">Projects</a></li>
+      <li><a href="#contact-sec" class="nav-link contact">Contact</a></li>
       <li><a download= "" href="documents/KUMAR_ ANAND_Resume.pdf" onclick="window.open(`https://drive.google.com/file/d/1nsnlYP3nJ9X8FGQaom0rBlRMCfC4tB03/view`)" target="_blank" class="nav-link resume" id="resume-button-1">Resume</a></li>
     </ul>
 
@@ -32,7 +33,7 @@
     <div id="user-detail-name" class="home-text">
       <p>Hello, I’m</p>
       <h1>KUMAR VISHAL ANAND</h1>
-      <p>JAVA BACK-END DEVELOPER</p>
+      <p class="java">JAVA BACK-END DEVELOPER</p>
       <div class="home-links" id="user-detail-intro">
         <div class="resume">
           <a download= "" href="documents/KUMAR_ ANAND_Resume.pdf" onclick="window.open(`https://drive.google.com/file/d/1nsnlYP3nJ9X8FGQaom0rBlRMCfC4tB03/view`)" target="_blank" id="resume-button-2">Download Resume</a>
@@ -54,8 +55,8 @@
 
     </div>
 
-    <div class="home-card-main">
-
+    <!-- <div class="home-card-main"> -->
+<!-- 
       <div class="home-card">
         <pre>1&nbsp;&nbsp;class <b>Person</b>{</pre>
           <pre>2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; constructor(){</pre>
@@ -63,8 +64,11 @@
           <pre>4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.traits = ["<b>JAVA DEV</b>", "<b>Programmer</b>"];</pre>
         <pre>5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.city =New Delhi;</pre><pre>6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</pre>
         <pre>7&nbsp;&nbsp;}</pre>
-      </div>
-    </div>
+      </div> -->
+      <!-- <div>
+        <img src="photos/main.png" alt="">
+      </div> -->
+    <!-- </div> -->
 
   </section>
 
@@ -82,6 +86,9 @@
     </div>
   </section>
 
+  <section id="skills-sec">
+  </section>
+  
   <section id="skills">
     <h1>Skills</h1>
     <div class="skills-card">
@@ -90,7 +97,7 @@
         <img class="skills-card-img" src="photos/java-logo.png" alt="Java"><p class="skills-card-name">Java</p>
       </div>
       <div>
-        <img class="skills-card-img" src="photos/spring-boot-logo.png" alt="Spring_Boot"><p class="skills-card-name">Spring Boot</p>
+        <img class="skills-card-img" src="photos/spring-logo.png" alt="Spring_Boot"><p class="skills-card-name">Spring Boot</p>
       </div>
       <div>
         <img class="skills-card-img" src="photos/jdbc-logo.png" alt="JDBC"><p class="skills-card-name">JDBC</p>
@@ -133,15 +140,120 @@
       </div>
     </div>
   </section>
-
+  
+  <section id="projects-sec">
+  </section>
   <section id="projects">
     <h1>Projects</h1>
-
+    <div class="all-projects">
+      <div class="project-card">
+        <div>
+          <img src="photos/Screenshot (320).png" alt="">
+        </div>
+        <div>
+          <h1 class="project-title" >Best Buy</h1>
+          <p class="project-description">About
+            Shop Best Buy for electronics, computers, appliances, cell phones, video games & more new tech. In-store pickup & free 2-day shipping on thousands of items.</p>
+          <h5  class="project-tech-stack" >Tech Stack: HTML | CSS | JavaScript</h5>
+          <p>Individual Project built  in 4 Days.</p>
+          <div>
+            <button  class="project-deployed-link">Live Demo</button>
+            <button class="project-github-link" >GitHub</button>
+            <button  class="project-deployed-video">Video</button>
+          </div>
+        </div>
+     </div>
+      <div class="project-card">
+        <div>
+          <img src="photos/Screenshot (320).png" alt="">
+        </div>
+        <div>
+          <h1 class="project-title" >Best Buy</h1>
+          <p class="project-description">About
+            Shop Best Buy for electronics, computers, appliances, cell phones, video games & more new tech. In-store pickup & free 2-day shipping on thousands of items.</p>
+          <h5  class="project-tech-stack" >Tech Stack: HTML | CSS | JavaScript</h5>
+          <p>Individual Project built  in 4 Days.</p>
+          <div>
+            <button  class="project-deployed-link">Live Demo</button>
+            <button class="project-github-link" >GitHub</button>
+            <button  class="project-deployed-video">Video</button>
+          </div>
+        </div>
+     </div>
+      <div class="project-card">
+        <div>
+          <img src="photos/Screenshot (320).png" alt="">
+        </div>
+        <div>
+          <h1 class="project-title" >Best Buy</h1>
+          <p class="project-description">About
+            Shop Best Buy for electronics, computers, appliances, cell phones, video games & more new tech. In-store pickup & free 2-day shipping on thousands of items.</p>
+          <h5  class="project-tech-stack" >Tech Stack: HTML | CSS | JavaScript</h5>
+          <p>Individual Project built  in 4 Days.</p>
+          <div>
+            <button  class="project-deployed-link">Live Demo</button>
+            <button class="project-github-link" >GitHub</button>
+            <button  class="project-deployed-video">Video</button>
+          </div>
+        </div>
+     </div>
+      <div class="project-card">
+        <div>
+          <img src="photos/Screenshot (320).png" alt="">
+        </div>
+        <div>
+          <h1 class="project-title" >Best Buy</h1>
+          <p class="project-description">About
+            Shop Best Buy for electronics, computers, appliances, cell phones, video games & more new tech. In-store pickup & free 2-day shipping on thousands of items.</p>
+          <h5  class="project-tech-stack" >Tech Stack: HTML | CSS | JavaScript</h5>
+          <p>Individual Project built  in 4 Days.</p>
+          <div>
+            <button  class="project-deployed-link">Live Demo</button>
+            <button class="project-github-link" >GitHub</button>
+            <button  class="project-deployed-video">Video</button>
+          </div>
+        </div>
+     </div>
+    </div>
+    
   </section>
 
-  <section id="github-stats"></section>
+  <section>
+    <div class="github react-activity-calendar">
+      <h1>GitHub Calender</h1>
+      <div>
+          <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+          <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+  
+          <div class="calendar react-activity-calenda">
+          Loading the data just for you.
+          </div>
+  
+          <script>
+          GitHubCalendar(".calendar", "Im-vishalanand");
+          // or enable responsive functionality
+          GitHubCalendar(".calendar", "Im-vishalanand", { responsive: true });
+          </script>
+          <div>
+            <a href="https://github.com/Im-vishalanand" target="_blank"><img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=Im-vishalanand&show_icons=true&theme=gotham"></a>
+              
+            <a href="https://github.com/Im-vishalanand" target="_blank"><img  id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=Im-vishalanand&theme=gotham&hide_border=false"></a>
+          </div>
+          <div>
+            <a href="https://github.com/Im-vishalanand" target="_blank"><img id="github-top-langs"src="https://github-readme-stats.vercel.app/api/top-langs/?username=Im-vishalanand&layout=compact&theme=gotham"></a>
+          </div>
+          
+  
+          
+      </div>
+     </div>
+  </section>
 
+   <section id="contact-sec">
+  </section>
   <section id="contact">
+    <h1>Contact</h1>
+
   </section>
 
   <footer>
@@ -156,7 +268,7 @@
         <img src="photos/linkedin.png" alt="">
       </a>
     </div>
-    <div>Copyright © 2023 | Kumar Vishal Anand</div>
+    <div>© Designed by Kumar Vishal Anand | 2023</div>
   </footer>
 
 
