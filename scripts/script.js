@@ -1,5 +1,5 @@
 let menu=document.getElementById("menu-icon");
-let navbar=document.getElementById("navbar");
+let navbar=document.querySelector(".navbar");
 let m=document.querySelector(".main-body")
 // let count=0;
 menu.addEventListener('click',()=>{

@@ -84,7 +84,7 @@ header img{
 }
 #home>div:nth-child(1){
     position: absolute;
-    width: 100vw;
+    width: 98.5vw;
     height: 100vh;
     z-index: -10;
     background-color: rgb(78, 105, 223);
@@ -107,6 +107,7 @@ header img{
     /* margin: 40px 40px 10px 40px; */
     width: 100%;
     margin-left: 30px;
+    margin-top: 80px;
 }
 .home-text>p{
     font-size: 2.5rem;
@@ -167,11 +168,12 @@ header img{
 #resume-button-2{
     background: linear-gradient(134deg, rgb(106, 152, 240) 0%, rgb(73, 97, 220) 99%);
     color: white;
-    padding: 10px;
+    padding: 7px 9px;
     border-radius: 4px;
     font-size: 20px;
     margin: 10px 0;
-
+    display: block;
+    width: 190px;
 }
 
 .home-card-main{
@@ -199,8 +201,12 @@ header img{
     size: 50px;
 }
 
-section{
+/* section{
     height: 100vh;
+} */
+
+.skills-card{
+    margin-bottom: 100px;
 }
 #skills-sec, #projects-sec, #contact-sec{
     height: 12vh;
@@ -224,11 +230,11 @@ section{
 }
 #about img{
     border-radius: 50%;
-    width: 20vw;
+    width: 25vw;
 }
 .home-card-main>div>img{
     border-radius: 50%;
-    width: 25vw;
+    /* width: 25vw; */
     margin-left: 150px;
 }
 
@@ -333,6 +339,7 @@ section{
     margin: 40px 0;
 }
 .project-card>div:nth-child(1){
+    /* border: 1px solid red; */
     width: 62%;
     
 }
@@ -340,6 +347,7 @@ section{
     width: 100%;
 }
 .project-card>div:nth-child(2){
+    /* border: 1px solid red; */
     text-align: center;
     margin: 0px 20px;
     width: 38%;
@@ -351,7 +359,7 @@ section{
     color: white;
 }
 .project-card>div:nth-child(2)>div{
-    margin: 30px 0;
+    margin: 55px 0;
 }
 .project-card>div:nth-child(2) button{
     padding: 8px 15px;
@@ -361,7 +369,14 @@ section{
     background-color: white;
     color: #10151a;
     font-size: 1.1rem;
+    cursor: pointer;
 }
+
+.project-card>div:nth-child(2) button:hover{
+    color: #ffffff;
+    background: #4e69df;
+}
+
 
 .project-card>div:nth-child(2)>h1{
     font-size: 28px;
@@ -412,6 +427,134 @@ section{
     color: rgb(36, 36, 36);
     margin-bottom: 30px;
 }
+
+
+
+
+
+
+
+#contact>div{
+
+    /* border:1px solid black; */
+    width:80%;
+    background-color: #7085e2;
+    margin:40px auto;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    padding: 50px 0;
+}
+
+.personal-info{
+    /* border:1px solid black; */
+    width:45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.personal-info>div{
+    /* border: 1px double #f0422f; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 50px;
+    border-radius: 10px;
+    height:100%;
+    margin:20px auto;
+    background-color: white;
+}
+.personal-info>div>div{
+
+    /* border: 1px solid black; */
+    margin:25px auto;
+}
+.personal-info>div>div>p{
+    margin: 5px 10px;
+}
+
+.info-head{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 5px 10px;
+    color:#4e69df;
+}
+.info-head>i{
+    margin-right: 8px;
+}
+.send-info{
+    /* border:1px solid black; */
+    width:45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.send-info>div{
+    /* border:1px solid black; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color:white;
+    border-radius: 20px;
+    width:80%;
+    margin:20px auto;
+    height: 100%;
+    padding: 10px;
+
+}
+.input-box{
+    /* border:1px solid black; */
+    border-radius:10px ;
+    background-color: #273036;
+    margin: 15px 20px;
+}
+.input-box:first-child{
+    margin-top:20px;
+}
+
+.input-box>p{
+    padding: 10px 15px 0px;
+    font-size: 14px;
+    color: #4e69df;
+}
+.input-box>input ,.input-box>textarea {
+    background-color: #273036;
+    border: none;
+    resize: none;
+    border-radius:20px ;
+    font-size: 14px;
+    padding:0px 15px 10px;
+    color:white;
+    width: 100%;
+    box-sizing: border-box;
+}
+.input-box>input:focus , .input-box>textarea:focus{
+    outline: none;
+}
+.submit-btn {
+    margin: 15px 20px 20px;
+}
+.submit-btn > button{
+    /* margin: 15px 20px; */
+    font-size: 16px;
+    padding: 8px 12px;
+    background-color: #4e69df;
+    border: 2px solid #4e69df;
+    color:white;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+.submit-btn > button:hover{
+   
+    background-color: white;
+    border: 2px solid #4e69df;
+    color:#4e69df;
+
+}
+
+
+
+
 
 
 

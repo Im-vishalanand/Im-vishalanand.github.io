@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="photos/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
     <title>Kumar Vishal Anand | Web Developer</title>
     
@@ -16,7 +17,7 @@
     <!-- <a href="#" id="logo" class="logo">Kumar Vishal Anand</a> -->
     <a href="#" class="logo"><img src="photos/logo.png" alt="Vishal-logo"></a>
 
-    <ul id="nav-menu">
+    <ul id="nav-menu" class="navbar">
       <li><a href="#" class="active nav-link home">Home</a></li>
       <li><a href="#about" class="nav-link about section">About</a></li>
       <li><a href="#skills-sec" class="nav-link skills">Skills</a></li>
@@ -54,21 +55,6 @@
       </div>
 
     </div>
-
-    <!-- <div class="home-card-main"> -->
-<!-- 
-      <div class="home-card">
-        <pre>1&nbsp;&nbsp;class <b>Person</b>{</pre>
-          <pre>2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; constructor(){</pre>
-          <pre>3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.name = "<b>Kumar Vishal Anand</b>";</pre>
-          <pre>4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.traits = ["<b>JAVA DEV</b>", "<b>Programmer</b>"];</pre>
-        <pre>5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.city =New Delhi;</pre><pre>6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</pre>
-        <pre>7&nbsp;&nbsp;}</pre>
-      </div> -->
-      <!-- <div>
-        <img src="photos/main.png" alt="">
-      </div> -->
-    <!-- </div> -->
 
   </section>
 
@@ -136,6 +122,37 @@
         <img class="skills-card-img" src="photos/git-logo.png" alt="Git"><p class="skills-card-name">Git</p>
       </div>
     </div>
+  </section>
+
+  <section id="github-sec">
+    <div class="github react-activity-calendar">
+      <h1>GitHub Calender</h1>
+      <div>
+          <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+          <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+  
+          <div class="calendar react-activity-calenda">
+          Loading the data just for you.
+          </div>
+  
+          <script>
+          GitHubCalendar(".calendar", "Im-vishalanand");
+          // or enable responsive functionality
+          GitHubCalendar(".calendar", "Im-vishalanand", { responsive: true });
+          </script>
+          <div>
+            <a href="https://github.com/Im-vishalanand" target="_blank"><img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=Im-vishalanand&show_icons=true&theme=gotham"></a>
+              
+            <a href="https://github.com/Im-vishalanand" target="_blank"><img  id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=Im-vishalanand&theme=gotham&hide_border=false"></a>
+          </div>
+          <div>
+            <a href="https://github.com/Im-vishalanand" target="_blank"><img id="github-top-langs"src="https://github-readme-stats.vercel.app/api/top-langs/?username=Im-vishalanand&layout=compact&theme=gotham"></a>
+          </div>
+          
+  
+          
+      </div>
+     </div>
   </section>
   
   <section id="projects-sec">
@@ -215,42 +232,62 @@
     
   </section>
 
-  <section id="github-sec">
-    <div class="github react-activity-calendar">
-      <h1>GitHub Calender</h1>
-      <div>
-          <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-          <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
-  
-          <div class="calendar react-activity-calenda">
-          Loading the data just for you.
-          </div>
-  
-          <script>
-          GitHubCalendar(".calendar", "Im-vishalanand");
-          // or enable responsive functionality
-          GitHubCalendar(".calendar", "Im-vishalanand", { responsive: true });
-          </script>
-          <div>
-            <a href="https://github.com/Im-vishalanand" target="_blank"><img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=Im-vishalanand&show_icons=true&theme=gotham"></a>
-              
-            <a href="https://github.com/Im-vishalanand" target="_blank"><img  id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=Im-vishalanand&theme=gotham&hide_border=false"></a>
-          </div>
-          <div>
-            <a href="https://github.com/Im-vishalanand" target="_blank"><img id="github-top-langs"src="https://github-readme-stats.vercel.app/api/top-langs/?username=Im-vishalanand&layout=compact&theme=gotham"></a>
-          </div>
-          
-  
-          
-      </div>
-     </div>
-  </section>
-
    <section id="contact-sec">
   </section>
   <section id="contact">
     <h1 id="contact-phone">Contact</h1>
-    <h1 id="contact-email">Email</h1>
+    <div>
+      <div class="personal-info">
+          <div>
+              <div id="contact-email">
+                  <div class="info-head">
+                      <i class="fa-regular fa-envelope"></i>
+                      <p>Email</p>
+                  </div>
+                  <p>im.vishalanand11@gmail.com</p>
+              </div>
+              <div  >
+                  <div class="info-head">
+                      <i class="fa-solid fa-phone"></i>
+                      <p id="contact-phone" >Phone Number</p>
+                  </div>
+                  <p>+91 7678682544</p>
+              </div>
+              <div>
+                  <div class="info-head">
+                      <i class="fa-brands fa-twitter"></i>
+                      <p>Twitter</p>
+                  </div>
+                  <p>@im_vishalanand</p>
+              </div>
+          </div>
+      </div>
+      <div class="send-info">
+
+          <div>
+              <div class="input-box">
+                  <p>Name</p>
+                  <input type="text" />
+              </div>
+              <div class="input-box">
+                  <p>Email</p>
+                  <input type="text" />
+              </div>
+              <div class="input-box">
+                  <p>Projects</p>
+                  <input type="text" />
+              </div>
+              <div class="input-box">
+                  <p>Message</p>
+                  <textarea type="text" rows="5"></textarea>
+              </div>
+              <div class="submit-btn">
+                  <button>Send Message</button>
+
+              </div>
+          </div>
+      </div>
+  </div>
 
   </section>
 
