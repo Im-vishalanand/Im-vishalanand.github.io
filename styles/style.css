@@ -206,7 +206,7 @@ header img{
 } */
 
 .skills-card{
-    margin-bottom: 100px;
+    margin-bottom: 110px;
 }
 #skills-sec, #projects-sec, #contact-sec{
     height: 12vh;
@@ -462,9 +462,9 @@ header img{
     height:100%;
     margin:20px auto;
     background-color: white;
+    width: 75%;
 }
 .personal-info>div>div{
-
     /* border: 1px solid black; */
     margin:25px auto;
 }
@@ -561,7 +561,7 @@ header img{
 
 
 
-
+/*-------------footer-------------*/
 
 footer{
     background-color: rgb(255, 255, 255);
