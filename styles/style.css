@@ -8,9 +8,10 @@
     /* overflow-x:hidden; */
 }
 
-.main-container{
-    /* width: 100vw; */
-}
+/* .main-container{
+    width: 100vw;
+} */
+
 header{
     width: 100%;
     position: fixed;
