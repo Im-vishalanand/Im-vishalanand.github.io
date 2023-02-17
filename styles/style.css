@@ -8,6 +8,9 @@
     /* overflow-x:hidden; */
 }
 
+.main-container{
+    /* width: 100vw; */
+}
 header{
     width: 100%;
     position: fixed;
@@ -353,7 +356,7 @@ header img{
     width: 38%;
     padding: 0 20px;
 }
-.project-card>div:nth-child(2)>h1,.project-card>div:nth-child(2)>p,.project-card>div:nth-child(2)>h5,.project-card>div:nth-child(2)>button{
+.project-card>div:nth-child(2)>h1,.project-card>div:nth-child(2)>p,.project-card>div:nth-child(2)>h5,.project-card>div:nth-child(2)>a{
     margin: 15px 0;
     font-size: 1.1rem;
     color: white;
@@ -361,7 +364,7 @@ header img{
 .project-card>div:nth-child(2)>div{
     margin: 55px 0;
 }
-.project-card>div:nth-child(2) button{
+.project-card>div:nth-child(2) a{
     padding: 8px 15px;
     margin: 0 5px;
     border-radius: 5px;
@@ -372,7 +375,7 @@ header img{
     cursor: pointer;
 }
 
-.project-card>div:nth-child(2) button:hover{
+.project-card>div:nth-child(2) a:hover{
     color: #ffffff;
     background: #4e69df;
 }
@@ -438,7 +441,7 @@ header img{
 
     /* border:1px solid black; */
     width:80%;
-    background-color: #7085e2;
+    background-color: #4e69df;
     margin:40px auto;
     display: flex;
     border-radius: 10px;
@@ -585,6 +588,7 @@ footer>div:nth-child(2){
 
 
 @media (max-width: 425px) {
+    
     .home-social{
         background-color: white;
         padding-top: 10px;
