@@ -443,7 +443,7 @@ header img{
 
     /* border:1px solid black; */
     width:80%;
-    background-color: #4e69df;
+    background-color: #10151a;
     margin:40px auto;
     display: flex;
     border-radius: 10px;
@@ -519,7 +519,7 @@ header img{
 .input-box>p{
     padding: 10px 15px 0px;
     font-size: 14px;
-    color: #4e69df;
+    color: white;
 }
 .input-box>input ,.input-box>textarea {
     background-color: #273036;
